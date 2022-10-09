@@ -1,0 +1,55 @@
+一 数据库操作
+// 查询当前数据库
+db
+
+// 查询所有数据库
+show dbs
+
+// 创建/切换数据库
+use music
+
+// 删除数据库
+db.dropDatabase()
+
+二 集合操作
+// 创建一个集合
+db.createCollection('collectionName')
+
+// 得到当前db的所有集合
+db.getCollectionNames()
+
+// 删除集合
+db.collection.drop()
+
+三 文档操作
+// 插入数据
+db.mabaoguo.insert([{name: 'm1', release: '2020-12-06'}])
+
+// 修改数据
+db.mabaoguo.update({name: 'm1'},{$set: {release: '2020-12-04'}})
+db.mabaoguo.updateMany({name: 'm100'},{$set: {release: '2020-12-04'}}, {upsert: true})
+
+// 删除数据
+db.baoguo.remove({name: 'm100'})
+
+// 查询数据
+db.mabaoguo.find()
+db.mabaoguo.distinct('name')
+db.mabaoguo.find({age: {$gt: 3}})
+db.mabaoguo.find({age: {$gte: 3}})
+db.mabaoguo.find({age: {$lt: 4}})
+db.mabaoguo.find({age: {$lte: 4}})
+db.mabaoguo.find({age: {$gte: 4, $lt: 5}})
+db.mabaoguo.find({name: /1/})
+db.mabaoguo.find({name: /^1/})
+db.mabaoguo.find({name: /1$/})
+db.mabaoguo.find({}, {_id: 0})
+db.mabaoguo.find({name: /1/}, {_id: 0})
+db.mabaoguo.find().sort({age: 1})
+db.mabaoguo.find().sort({age: -1})
+db.mabaoguo.find().limit(3)
+db.mabaoguo.find().limit(3).skip(3)
+db.mabaoguo.find().limit(3).skip(3).sort({age: -1})
+db.mabaoguo.find({$or: [{name: '1'}, {age: 3}]})
+db.mabaoguo.find({$or: [{name: '1'}, {name: '3'}]})
+db.mabaoguo.find({$or: [{name: '1'}, {name: '3'}]}).count()

@@ -1,0 +1,13 @@
+[2022-09-08T17:11:39.013] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:12:23.835] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:12:29.003] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:12:48.060] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:13:35.841] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:44:56.431] [DEBUG] cheese - [Object: null prototype] { name: 'tongyi', age: '18' }
+[2022-09-08T17:45:40.191] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:46:22.623] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:47:27.756] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:47:27.910] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:47:28.050] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:47:28.202] [DEBUG] cheese - [Object: null prototype] { city: '上海' }
+[2022-09-08T17:47:28.354] [DEBUG] cheese - [Object: null prototype] { city: '上海' }

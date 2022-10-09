@@ -1,0 +1,32 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-requery-jquery-global.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp -f gulp.config.js",
+    "prod": "cross-env NODE_ENV=production gulp -f gulp.config.js",
+    "greeting": "echo hello",
+    "runjs": "node ./03-scripts/script1.js & node ./03-scripts/script2.js",
+    "start": "node ./03-scripts/script.js",
+    "test": "node ./03-scripts/test.js",
+    "build": "echo %npm_package_config_env%"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "03-custom11": "^1.0.0",
+    "axios": "^0.27.2",
+    "jquery": "^2.1.4",
+    "underscore": "^1.13.4",
+    "vabms": "git+ssh://git@github.com/hh1412/VABMS.git"
+  },
+  "config": {
+    "env": "production"
+  }
+}
